@@ -1,0 +1,226 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 .SFNSDisplay;\f1\fnil\fcharset0 AppleSymbols;}
+{\colortbl;\red255\green255\blue255;\red179\green179\blue179;\red0\green0\blue255;\red5\green10\blue30;
+\red0\green0\blue0;\red24\green25\blue27;\red255\green255\blue255;\red5\green10\blue30;\red24\green25\blue27;
+\red0\green0\blue255;\red15\green121\blue165;\red221\green32\blue103;\red154\green154\blue154;}
+{\*\expandedcolortbl;;\csgray\c75407;\cssrgb\c1680\c19835\c100000;\cssrgb\c1569\c4706\c15686;
+\csgray\c0\c0;\cssrgb\c12549\c12941\c14118;\cssrgb\c100000\c100000\c100000;\cssrgb\c1569\c4706\c15686;\cssrgb\c12549\c12941\c14118;
+\cssrgb\c1680\c19835\c100000;\cssrgb\c0\c54942\c70689;\cssrgb\c90234\c23206\c47866;\csgray\c66775;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh16000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 GF(A) \'e7a veut dire qu\'92\'e0 tout moment on a dans le futur A vrai\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 GF(B) \'e7a veut dire qu\'92\'e0 tout moment on a dans le futur B vrai\
+\
+Mais rien ne dit qu\'92ils sont l\'e0 en m\'eame temps\
+\'95\'a0D\'92o\'f9 le contre-exemple :\
+- Si on a AB barre on a juste A mais pas B\
+- Dans le prochain \'e9tat, on a A barre B on a juste B mais pas A\
+- Donc sur ces 2 \'e9tats \'e0 l\'92infini, 	on est s\'fbr que dans le futur on a tjrs A, \
+     						on est s\'fbr que dans le futur on a tjrs B \
+						par contre on n\'92a pas A et B simultan\'e9ment. Ce qui est le d\'e9part de preuve\
+\
+Donc on peut tr\'e8s bien imaginer un syst\'e8me o\'f9 on a AB barre Abarre B \
+Ce chemin infini qui est \'e9tiquet\'e9 par \'e7a v\'e9rifie GF(A ) et GF(B) mais pas GF(A et B)\
+\
+L\'92autre sens est direct si on a une infinit\'e9 de A et de B en m\'eame temps donc forc\'e9ment on a une infinit\'e9 de A et une infinit\'e9 de B.\
+\
+\cb2 J\'92esp\'e8re que vous avez compris mon la Syntaxe et S\'e9mantque LTL, on va faire un autre exercice sur l\'92expression de propri\'e9t\'e9s.\
+On va utiliser la logique pour exprimer une propri\'e9t\'e9.\
+\
+Rappel : mod\'e8les formelles comme r\'e9seau de p\'e9tri / machines \'e0 \'e9tats et exercices de mod\'e9lisation (\'e0 partir de description d\'92un syst\'e8me, on a essay\'e9 de mod\'e9liser avec le formalisme qu\'92on a vu)\
+\
+Mtn on va faire de la mod\'e9lisation mais pas pour mod\'e9liser un syst\'e8me mais pour exprimer des expressions en logique temporelle formelle.\
+\cb1 \
+
+\b \ul Exprimer en langage LTL ces phrases :
+\b0 \ulnone \
+\
+\cf3 1) Un jour il y aura p\cf0 \
+GF(p)\
+\cf3 2) Il y aura tjrs p\cf0 \
+G(p)\
+\cf3 3) Il y a une infinit\'e9 de fois p\cf0 \
+GF(p)\
+\cf3 4) Il n\'92y a jamais p et q simultan\'e9ment\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \'acF\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 (P
+\f1 \cf6 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \uc0\u8743 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Q)	\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 5) Apr\'e8s chaque occurence de p, il y a au moins une occurence de q.\
+\
+\cf3 6) S\'92il y a une infinit\'e9 de p1 et une infinit\'e9 de p2 alors chaque occurence de q1 sera suivie d\'92au moins une occurence de q2.\cf0 \
+(GF(p1) 
+\f1 \cf6 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \uc0\u8743 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  GF(p2)) => G(q1 => F(q2))\
+\cf3 7) Avant chaque occurence de p, il y a au moins une occurence de q.\cf0 \
+ G\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cf9 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8744 
+\f0 \cf9 \cb7 (\cf8 \cb5 \'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cf8 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 q)\
+\cf3 8) Si la machine accepte une carte, elle n\'92accepte aucune autre carte avant que la lumi\'e8re soit \'e9ject\'e9e.\cf0 \
+G(accept => X(\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 accept 
+\f1 \cf8 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746  
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 reject))\
+\cf3 9) Il y a au plus une occurence de p.\cf0 \
+G\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cf6 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \uc0\u8744 
+\f0 \cf8 \cb5 \outl0\strokewidth0 ((\cf8 \cb5 \'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8746 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 p) 
+\f1 \cf9 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743  
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 F\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p)\
+\cf3 10) Il y a exactement 2 occurences de p.\cf0 \
+Fp
+\f1 \cf9 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 G(p=>XG\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p 
+\f1 \cf8 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746  
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 (p
+\f1 \cf9 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 XG\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf10  Il n\'92y a pas exactement 2 occurences de p.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p 
+\f1 \cf8 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746  
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 (p
+\f1 \cf9 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 (\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p 
+\f1 \cf8 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0  (p 
+\f1 \cf9 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0  XG\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0 p)))\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf11 1) GF(p)\
+2) G(p)								(\'e9couter 22min)\
+3) GF(p)								(\'e9couter \'e0 partir de 22min50sec)   (\'e9couter r\'e9ponse \'e0 32min45sec)\
+4) \cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 F(p
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cb1 \kerning1\expnd0\expndtw0 q)								(\'e9couter \'e0 partir de 32min50sec)   (\'e9couter r\'e9ponse \'e0 38minsec)\
+5)\
+6) (GF(p1) 
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cb1 \kerning1\expnd0\expndtw0  GF(p2)) => G(q1 => F(q2))\cf0 \
+\cf12 7) G\cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8744 
+\f0 (\cb5 \'ac\cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746 
+\f0 \cb1 \kerning1\expnd0\expndtw0 	q)							(\'e9couter \'e0 partir d\'92audio 2)     (\'e9couter jusqu\'92\'e0 11min28sec)\
+8) G(accept => X(\cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 accept 
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746  
+\f0 \cb1 \kerning1\expnd0\expndtw0 reject))				(\'e9couter \'e0 partir de minsec)   (\'e9couter r\'e9ponse \'e0 22min50sec)\
+9) G\cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8744 
+\f0 \cb5 ((\'ac\cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746 
+\f0 \cb1 \kerning1\expnd0\expndtw0 p) 
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743  
+\f0 \cb1 \kerning1\expnd0\expndtw0 F\cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 p)\
+10) Fp
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cb1 \kerning1\expnd0\expndtw0 G(p=>XG\cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 p)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf12 \cb5 \expnd0\expndtw0\kerning0
+        \'ac\cb1 \kerning1\expnd0\expndtw0 p
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8746 
+\f0 \cb1 \kerning1\expnd0\expndtw0 (p
+\f1 \cb7 \expnd0\expndtw0\kerning0
+\uc0\u8743 
+\f0 \cb1 \kerning1\expnd0\expndtw0 XG\cb5 \expnd0\expndtw0\kerning0
+\'ac\cb1 \kerning1\expnd0\expndtw0 p)\cf0 \
+ \
+\
+\
+p=acceptation\
+q=reject\
+\
+p=carte accept\'e9e : accept\
+\cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac\cf0 \cb1 \kerning1\expnd0\expndtw0  p = carte pas accept\'e9e : \cf8 \cb5 \expnd0\expndtw0\kerning0
+\'ac accept\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+q = \
+\
+\
+Ya pas dans la formule y a une carte ou y a pas une carte\
+Les actions \'e0 partir de cette phrase, je dois repr\'e9senter le fait d\'92accepter, le fait de rejeter\
+D\'92apr\'e8s la phrase \'ab\'a0si la machine accepte une carte, elle n\'92accepte aucune carte avant que la lumi\'e8re soit \'e9ject\'e9e\'a0\'bb.\
+Donc il faut d\'e9tecter des propositions atomiques pour les actions qui m\'92int\'e9ressent.\
+C\'92est clair qu\'92ici ce qui m\'92int\'e9resse c\'92est de dire ya des actions : accepter et rejeter.(23.41)\
+\
+Accept\'e9 implique Next pas accept\'e9\
+Donc l\'92occurence de l\'92\'e9v\'e8nement acceptation ne doit pas avoir lieu avant que reject ait lieu.\
+Donc accept implique Next not accept (23.52)\
+Il faut ajouter next car si tu mets directement :  toujours accept et rejet il faut qu\'92il soit vrai en m\'eame temps si on enl\'e8ve le next,\
+Parce que si j\'92ai accept vous dites il faut que j\'92ai not accept jusqu\'92\'e0 rejet, puisque j\'92ai accept je peux pas avoir not accept.\
+Parce que l\'92implication y a de temporalit\'e9, implique c\'92est dans le m\'eame \'e9tat.\
+\
+A => B : \'e7a veut dire que si vous \'eates dans un \'e9tat ou A est vrai, B doit \'eatre vrai dans le m\'eame \'e9tat.(24.43)\
+Et moi je peux pas avoir accept et not accept en m\'eame temps.\
+Du coup si j\'92ai accept, il faut que j\'92ai reject tt de suite. \
+Donc j\'92ai accept et reject dans le m\'eame \'e9tat. (24.50)\
+Il faut rajouter next pour dire si jamais j\'92ai accept \'e0 partir du prochain \'e9tat j\'92aurais not accept not accept not accept jusqu\'92\'e0 rejet\
+Si j\'92ai rejet dans le prochain \'e9tat \'e7a me va.\
+\
+Next v\'e9rifie tt \'e7a.\
+\
+- Si ton ensemble de propositions atomiques, tu as A,B et C, A=> B \'e7a veut dire que tu t\'92en fous de C, l\'92essentiel c\'92est que tu aies A.\
+- A barre implique B ce qui importe c\'92est de pas avoir A donc si t\'92as un C \'e7a marche parce que t\'92as un C t\'92as pas A l\'92essentiel c\'92est de pas avoir A. (25.50)\
+\
+Next c\'92est le prochain \'e9tat \
+Next v\'e9rifie quoi ? J\'92ai pas un \cf13 type rejet \cf0 \
+\
+Question 9 : 26.35\
+\
+\
+\
+\
+\
+}

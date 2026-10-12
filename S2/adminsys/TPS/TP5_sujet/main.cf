@@ -1,0 +1,39 @@
+# LOCAL PATHNAME INFORMATION
+queue_directory = /var/spool/postfix
+command_directory = /usr/sbin
+daemon_directory = /usr/lib/postfix
+data_directory = /var/lib/postfix
+   
+# QUEUE AND PROCESS OWNERSHIP
+mail_owner = postfix
+myhostname = mail.adsys.univ-paris13.fr
+mydomain = adsys.univ-paris13.fr
+
+# SENDING MAIL
+myorigin = $myhostname
+
+# RECEIVING MAIL
+inet_interfaces = all
+
+# DELIVER
+mydestination = localhost, localhost.$mydomain, $mydomain
+
+# REJECTING MAIL FOR UNKNOWN LOCAL USERS
+#local_recipient_maps = unix:passwd.byname $alias_maps
+#local_recipient_maps = proxy:unix:passwd.byname $alias_maps
+#local_recipient_maps =
+unknown_local_recipient_reject_code = 550
+
+# TRUST AND RELAY CONTROL
+mynetworks = 127.0.0.0/8, 192.168.20.0/24
+
+# INTERNET OR INTRANET
+#relayhost = [an.ip.add.ress]
+
+smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
+
+debugger_command =
+	 PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
+	 ddd $daemon_directory/$process_name $process_id & sleep 5
+
+

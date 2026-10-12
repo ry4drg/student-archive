@@ -1,0 +1,648 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 STIXGeneral-Regular;\f1\fnil\fcharset0 AppleSymbols;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 .SFNSDisplay;\f4\froman\fcharset0 Times-Roman;\f5\ftech\fcharset77 Symbol;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue10;\red42\green49\blue64;
+\red0\green0\blue255;\red255\green255\blue255;\red0\green0\blue109;\red8\green61\blue0;\red58\green0\blue0;
+\red175\green0\blue49;\red38\green28\blue162;\red38\green28\blue164;\red251\green0\blue7;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c99942\c98555\c0;\cssrgb\c21569\c25490\c31765;
+\cssrgb\c1680\c19835\c100000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c50196;\cssrgb\c0\c29804\c0;\cssrgb\c29804\c0\c0;
+\cssrgb\c74902\c0\c25098;\cssrgb\c20000\c20000\c69804;\cssrgb\c20000\c20000\c70196;\cssrgb\c100000\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10900\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \uc0\u8866 
+\f2 \cf4 \strokec4  : Ce symbole se lit g\'e9n\'e9ralement comme "donne" ou "entra\'eene".
+\f3 \cb1 \
+\
+\
+L'expression (
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .(
+\i \uc0\u945 
+\i0 \uc0\u8594 num))\u8594 num repr\'e9sente une fonction polymorphe en Syst\'e8me F. \
+En Syst\'e8me F, 
+\f1 \uc0\u8704 
+\f3  (pour tout) est utilis\'e9 pour quantifier universellement sur les types. La variable de type 
+\i \uc0\u945 
+\i0  est li\'e9e \'e0 l'int\'e9rieur de la quantification universelle.\
+En Syst\'e8me F, une abstraction polymorphe de type est not\'e9e 
+\i \uc0\u955 \u945 
+\i0 .
+\i t
+\i0 , o\'f9 
+\i \uc0\u945 
+\i0  est la variable de type et 
+\i t
+\i0  est le corps de l'abstraction. \
+La quantification universelle 
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .
+\i t
+\i0  est une g\'e9n\'e9ralisation de cette id\'e9e, o\'f9 
+\i t
+\i0  peut contenir des occurrences libres de 
+\i \uc0\u945 
+\i0  et la port\'e9e de 
+\i \uc0\u945 
+\i0  est \'e9tendue jusqu'\'e0 la fronti\'e8re ext\'e9rieure de 
+\i t
+\i0 .\
+Dans le cas de votre expression, on pourrait \'e9crire la fonction polymorphe en Syst\'e8me F comme suit :\
+\pard\pardeftab720\partightenfactor0
+
+\i \cf4 \uc0\u955 f
+\i0 :
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .(
+\i \uc0\u945 
+\i0 \uc0\u8594 num).
+\i f
+\i0 num\
+Ici, 
+\i f
+\i0  est une fonction polymorphe prenant une fonction 
+\i \uc0\u945 
+\i0 \uc0\u8594 num en argument, puis applique cette fonction \'e0 l'argument num. \
+La quantification universelle 
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .(
+\i \uc0\u945 
+\i0 \uc0\u8594 num) indique que la fonction 
+\i f
+\i0  peut \'eatre appel\'e9e avec des fonctions de type 
+\i \uc0\u945 
+\i0 \uc0\u8594 num pour n'importe quel 
+\i \uc0\u945 
+\i0 .\
+\
+\
+L'expression 
+\i \uc0\u945 
+\i0 \uc0\u8594 num se lit comme "une fonction de type 
+\i \uc0\u945 
+\i0  vers num". Permettez-moi de d\'e9composer cela pour une meilleure compr\'e9hension :\uc0\u8232 
+\i \uc0\u945 
+\i0  est une variable de type. Cela signifie que la fonction peut \'eatre polymorphe en ce qui concerne le type 
+\i \uc0\u945 
+\i0 , ce qui indique que la fonction peut prendre en argument des valeurs de n'importe quel type.\uc0\u8232 \u8594  repr\'e9sente la fl\'e8che ou l'op\'e9rateur de fonction. Ainsi, 
+\i \uc0\u945 
+\i0 \uc0\u8594 num signifie qu'il s'agit d'une fonction qui prend un argument de type 
+\i \uc0\u945 
+\i0  et renvoie un r\'e9sultat de type num.\uc0\u8232 \
+En termes plus concrets, cette fonction peut \'eatre utilis\'e9e pour repr\'e9senter une op\'e9ration qui prend une valeur de type 
+\i \uc0\u945 
+\i0  en entr\'e9e et produit une valeur de type num\
+num en sortie. Le type 
+\i \uc0\u945 
+\i0  est g\'e9n\'e9ralement compris comme une variable de type polymorphe, ce qui signifie que la fonction peut \'eatre sp\'e9cialis\'e9e pour diff\'e9rents types lors de son utilisation.\
+En langage de programmation fonctionnelle, cette notation est couramment utilis\'e9e pour d\'e9crire le type des fonctions et des expressions polymorphes.\
+\pard\tx566\pardeftab720\partightenfactor0
+\cf4 \
+\
+\'95 \uc0\u923 
+\i \uc0\u945 
+\i0 .
+\i \uc0\u955 x
+\i0 :
+\i \uc0\u945 
+\i0 .
+\i x
+\i0 \
+Cela repr\'e9sente une abstraction de type o\'f9 
+\i \uc0\u945 
+\i0  est une variable de type, et 
+\i \uc0\u955 x
+\i0 :
+\i \uc0\u945 
+\i0 .
+\i x
+\i0  est une abstraction de valeur prenant un argument 
+\i x
+\i0  de type 
+\i \uc0\u945 
+\i0  et renvoyant simplement 
+\i x
+\i0 . Ainsi, \uc0\u923 
+\i \uc0\u945 
+\i0 .
+\i \uc0\u955 x
+\i0 :
+\i \uc0\u945 
+\i0 .
+\i x
+\i0  est une abstraction de type qui prend un type 
+\i \uc0\u945 
+\i0 \
+et renvoie une fonction qui prend une valeur de type 
+\i \uc0\u945 
+\i0  et la renvoie sans modification.\
+
+\i \'95 \uc0\u955 x
+\i0 :
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .
+\i \uc0\u945 
+\i0 .\uc0\u923 
+\i \uc0\u946 
+\i0 .
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 \uc0\u8594 
+\i \uc0\u946 
+\i0 ]
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 ]\
+Cela repr\'e9sente une abstraction de valeur qui prend un argument 
+\i x
+\i0  de type 
+\f1 \uc0\u8704 
+\f3 \
+
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .
+\i \uc0\u945 
+\i0  (c'est-\'e0-dire une fonction polymorphe de type) et renvoie une abstraction de type \'85\
+
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 \uc0\u8594 
+\i \uc0\u946 
+\i0 ]
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 ] est une application de type. Cela sugg\'e8re une sorte de polymorphisme, o\'f9 
+\i x
+\i0  est utilis\'e9 avec une substitution de type 
+\i \uc0\u946 
+\i0 \uc0\u8594 
+\i \uc0\u946 
+\i0 .\
+En d\'e9taillant davantage :\
+
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .
+\i \uc0\u945 
+\i0  est un type polymorphe qui repr\'e9sente "pour tout type \'85\
+\uc0\u923 
+\i \uc0\u946 
+\i0 .
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 \uc0\u8594 
+\i \uc0\u946 
+\i0 ]
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 ] est une abstraction de type o\'f9 
+\i \uc0\u946 
+\i0  est une variable de type. Cela repr\'e9sente une fonction de type qui prend un type 
+\i \uc0\u946 
+\i0  et applique 
+\i x
+\i0  \'e0 ce type avec une substitution 
+\i \uc0\u946 
+\i0 \uc0\u8594 
+\i \uc0\u946 
+\i0 , puis applique \'e0 nouveau 
+\i x
+\i0  \'e0 ce type.\
+En r\'e9sum\'e9, \
+
+\i \uc0\u955 x
+\i0 :
+\f1 \uc0\u8704 
+\f3\i \uc0\u945 
+\i0 .
+\i \uc0\u945 
+\i0 .\uc0\u923 
+\i \uc0\u946 
+\i0 .
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 \uc0\u8594 
+\i \uc0\u946 
+\i0 ]
+\i x
+\i0 [
+\i \uc0\u946 
+\i0 ] est une fonction qui prend une fonction polymorphe 
+\i x
+\i0  en tant qu'argument et renvoie une fonction de type d\'e9pendant d'une variable de type 
+\i \uc0\u946 
+\i0 .\uc0\u8232 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf0 \kerning1\expnd0\expndtw0 \ul \ulc0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc\partightenfactor0
+\cf0 \ulnone TD12\ul \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+Question 1 : 
+\b0 \ulnone \
+\
+Est-ce-que \'e7a peut \'e9chouer si votre motif est un motif composite ?\
+\
+OUI, on ne peut pas le r\'e9duire \
+\
+Celui ci, on veut l\'92unifier avec une valeur. \
+Dans quel cas de figure \'e7a va \'e9chouer ?\
+\'c7a va \'e9chouer si par exemple notre valeur est un num\'e9ral.\
+Autre cas de figure dans lequel on a un motif et on a une valeur pas num\'e9ral mais qui est un composite si les constructeurs ne sont pas les m\'eames A\'92(v1\'85vn) si A\uc0\u8800 A\'92\
+\
+On veut unifier un motif avec une valeur et on cherche dans quel cas de figure cette unification \'e9choue.\
+On fait les r\'e8gles intuitivement sur la construction inductif \
+Cas terminaux  : num\'e9raux, jokers, variables.\
+\
+Dans le cas num\'e9ral cas d\'92\'e9chouage si on cherche \'e0 unifier avec une valeur qui n\'92est pas \'e0 un num\'e9ro.\
+Cas cherche \'e0 unifier 2 num\'e9ros \uc0\u8800 \
+\
+\
+On cherche \'e0 unifier un motif avec une valeur.\
+Pas de variable \'e0 droite, les variables n\'92ont pas de valeur.\
+Donc c\'92est soit avec des num\'e9ros soit des composites de valeur.\
+R\'e8gle unification pour le motif variable, elle est fonctionne tjrs, s\'92applique tjrs, est tjrs r\'e9ussi pour le motif joker.\
+\
+Y a que dans le cas o\'f9 on a des motifs nombres qui il peut y avoir des cas qui \'e9chouent.\
+Quand \'e7a \'e9choue, c\'92est quand valeur \uc0\u8800  du nombre \
+Donc si c\'92est une valeur composite \'e7a \'e9choue, si c\'92est un nombre \uc0\u8800  \'e7a \'e9choue aussi.\
+\
+\
+\
+On a le cas : le meme constructeur A(p1\'85pn) qu\'92on essaye d\'92unifier avec A(v1\'85vn).\
+Mais on peut avoir un cas d\'92\'e9chec s\'92il existe un des motifs qui ne s\'92unifie pas avec la valeur correspondante.\
+Il existe j, pj ne s\'92unifie pas avec vj dans ce cas l\'e0 \'e9chec.\
+\
+Autre cas d\'92\'e9chec : domaine de substitution n\'92est pas disjoint dernier cas\
+Il faut regarder ttes les r\'e8gles pour appliquer la r\'e8gle d\'92unification pour un motif composite.\
+Si une seule des conditions \'e9choue, l\'92unification \'e9choue.\
+Donc les conditions ici,\
+1\'e8re condition : c\'92est qu\'92on a le m\'eame constructeur pour le motif et pr les valeurs\
+2\'e8me condition : c\'92est que chaque sous motif s\'92identifie avec avec la valeur correspondante.\
+3\'e8me condition : c\'92est que le domaine de substitution est disjoint. Si le dom de sub n\'92est pas disjoint, l\'92unification \'e9choue\
+\
+\
+A(p1\'85pn) peut \'eatre unifi\'e9 avec A(v1\'85vn) cas de figure o\'f9 quelquesoit i Pi s\'92unifier avec vi avec une substitution Si.\
+\
+Cette fois-ci pour \'e9chouer on regarde la condition \'e0 droite si la condition \'e0 droite n\'92est pas remplie l\'92unification \'e9choue.\
+Si le domaine de sub n\'92est pas disjoint, dans ce cas-l\'e0 l\'92unification \'e9choue.\
+\
+\
+Exemple :\
+Cons(x, cons(x,Nil)) unifi\'e9 \'e0 cons(2, cons(3,Nil))\
+Est-ce-que \'e7a s\'92unifie ?\
+Non car ce x on veut substituer avec 3 mais ce x avec 3.\
+Donc on va unifier \'e7a avec \'e7a \'e7a va pas marcher dans cette unification on va dire je substitue x avec 3.\
+On substitue tt ceci avec ceci avec l\'92information que x va se substituter avec 3.\
+\'c7a \'e7a contredit l\'92hypoth\'e8se que le domaine de la substitution pour ce sous-motif et ce sous-motif sont disjoints.\
+Il ne sont pas disjoints, on essaye de substituer avec la m\'eame variable dans chacun des 2 sous-motifs et \'e7a c\'92est interdit.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Pour d\'e9terminer si l'expression cons(x, cons(x, Nil)) peut \'eatre unifi\'e9e avec cons(2, cons(3, Nil)), nous devons trouver une substitution pour la variable x qui rend les deux expressions \'e9quivalentes.\
+L'expression cons(x, cons(x, Nil)) semble repr\'e9senter une liste o\'f9 les deux premiers \'e9l\'e9ments sont les m\'eames (car x est utilis\'e9 deux fois). D'autre part, cons(2, cons(3, Nil)) repr\'e9sente une liste avec les \'e9l\'e9ments 2 et 3.\
+Pour que ces deux expressions soient unifiables, x doit \'eatre substitu\'e9 par 2, car le premier \'e9l\'e9ment de cons(x, cons(x, Nil)) doit correspondre au 2 dans cons(2, cons(3, Nil)). Cependant, cela entra\'eene une contradiction car le deuxi\'e8me \'e9l\'e9ment de cons(x, cons(x, Nil)) serait alors 2, ce qui ne correspond pas au 3 dans cons(2, cons(3, Nil)).\
+En conclusion, ces deux expressions ne peuvent pas \'eatre unifi\'e9es en utilisant une substitution coh\'e9rente pour x.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\cf0 \
+\
+\
+Les substitutions portent sur des noms de variables \uc0\u8800 .\
+1\'e8re cond : Constructeurs soient les m\'eames pour le motif et la valeurs.\
+2\'e8me cond : Chacun des sous motif s\'92unifie avec la sous-valeur correspondante.\
+3\'e8me cond : une fois que les 2 premi\'e8res sont r\'e9unis, le domaine de sub pour les unifications des sous-motifs sont tous disjoints. Donc toutes les substitutions correspondantes portent un nom de variable \uc0\u8800 .\
+\
+\
+Ici on fait \'e9chouer la 1\'e8re condition, les constructeurs sont les m\'eames\
+Ici on fait \'e9chouer la 2\'e8me condition, les sous-motifs s\'92unifie avec les sous-valeurs\
+Ici on fait \'e9chouer la 3\'e8me condition.\
+\
+\
+
+\b \ul Question 2 
+\b0 \ulnone \
+\
+Montrer que si un motif p ne contient pas le sous-motif joker et si p s\'92unifie avec la valeur v avec une substitution alors on a une substitution S appliqu\'e9e au motif p = v\
+\
+On suppose qu\'92on a un motif qui ne contient pas de sous-motif joker \
+On suppose que ce motif s\'92unifie avec une valeur .\
+Montrer que les sub correspondantes transforment le motif en la valeur.\
+Comment montrer ceci \'97> par induction sur le motif.\
+\
+Quels sont les cas terminaux (2): n et variable \
+\
+P s\'92unifie avec une valeur v et subst sigma c\'92est n s\'92unifie avec n avec aucune subst\
+Le motif p c\'92est n, la valeur v c\'92est n,  ensemble de votre subst S est vide.\
+On a alors, S c\'92est l\'92ensemble donc S(p) c\'92est p on substitue pas de variable et p = n par l\'92hypoth\'e8se donc S(p) = n\
+\
+Si le motif p est un nom de variable x, la r\'e8gle d\'92unification ici c\'92est la r\'e8gle terminale en unification des motifs de variables donc c\'92est x s\'92unifie en v avec succ\'e8s avec sa subst x fl\'e8che . \
+\'c7a c\'92est mon S \'e7a c\'92est mon v \'e7a c\'92est mon p\
+Dans ce cas, S appliqu\'e9 \'e0 p = S appliqu\'e9 \'e0 x = v \
+\
+S c\'92est une subst qui associe \'e0 des noms de variables des valeurs\
+Appliquer S \'e0 un motif c\'92est remplacer dans le motif tous les noms de variables qui apparaisse dans S par la valeur correspondante.\
+\
+Cas inductif : \
+P est obtenu avec un constructeur appliqu\'e9 avec des sous-motif p1\'85pn\
+La r\'e8gle d\'92unification qui s\'92applique p unifi\'e9 avec v A(p1\'85pn) s\'92unifie avec A(v1\'85vn) dans l\'92hypoth\'e8se o\'f9 Qlq i Pi s\'92unifie avec vi. \
+Les domaines de Si sont disjoints.\
+Ici j\'92ai unification r\'e9ussi avec union v et i.\
+\
+\
+Question 3 :\
+\
+Petit pas  : pour le LET (2 cas): let gauche\
+e1 se r\'e9duit en e1\'92 (ou v1 je sais pas) alors let x = e1 in e2 se r\'e9duit en let x = e1 in e2\
+Se r\'e9duit en let x=e1 in e2 se r\'e9duit en let x = v en e2 dans lequel on substitue x par v.\
+\
+Autant d\'92\'e9tapes pour r\'e9duire e1 pour obtenir les valeurs, \'e9tapes pour r\'e9duire e1 jusqu\'92\'e0 obtenir une valeur\
+\
+La s\'e9mantique \'e0 grand pas nous dit je sais qu\'92un moment e1 va se r\'e9duire en une valeur (je sais pas en combien d\'92\'e9tapes mais elle va se r\'e9duire).\
+Donc je vais aller chercher cette valeur et je vais faire la substitution mais \'e7a en un seul pas.\
+\
+A grand pas, 2 r\'e8gles pour le LET :\
+Une r\'e8gle qui nous dit une valeur (attention ici on utilise le m\'eame symbole que pr l\'92unification mais \'e7a n\'92a pas le m\'eame sens, voir l\'92execution des termes) \'e7a s\'92arr\'eate, l\'92execution est correcte.\
+Pour le LET: let x = e1 in e2 je pars de l\'92hypoth\'e8se que mon e1 va se r\'e9duire en une valeur en combien de temps je sais pas je m\'92en fiche.\
+Mon e se r\'e9duit \'e0 grand pas en une valeur v\
+On va chercher une valeur finale pr mon expression, j\'92ai aussi comme hypoth\'e8se que mon e2, dans lequel j\'92ai substitu\'e9 \'85, va aussi se r\'e9duire en  une valeur \
+Deuxi\'e8me hypoth\'e8se e2, dans lequel x est remplac\'e9 par v, va aller se ranger dans une valeur v2.\
+Sous ces 2 hypoth\'e8ses, mon expression se r\'e9duit en v2.\
+\
+\
+Grand pas : je vais aller chercher les conditions pour lesquels je r\'e9duis en une valeur sans pr\'e9occuper de combien de temps \'e7a va me prendre.\
+Je d\'e9cris pas l\'92ex\'e9cution pas \'e0 pas, je d\'e9cris le r\'e9sultat global de l\'92ex\'e9cution.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\uc0\u915 
+\f1 \cf2 \cb6 , 
+\f4 \cf2 \cb6 x\cf7 :\cf8 str\cf7  
+\f1 \cf2 \cb6 \uc0\u8866  
+\f4 \cf2 \cb6 x\cf9 \cb6  \cf2 \cb6 : \cf8 ?
+\f3 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 fun\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\uc0\u915  
+\f1 \uc0\u8866 (
+\f4 \cf7 \cb6 fun (\cf2 x\cf7 :\cf8 str\cf7 ) 
+\f5 \uc0\u8658 
+\f4  \cf2 x)\cf9 \cb6  \cf2 \cb6 : \cf8 str ?
+\f3 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 raise\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\uc0\u8866 
+\f4  \cf7 raise \cf2 (\cf7 fun (\cf2 x\cf7 :\cf8 str\cf7 ) 
+\f5 \uc0\u8658 
+\f4  \cf2 x) : \cb1 \uc0\u8232 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\uc0\u915  
+\f1 \cf2 \cb6 \uc0\u8866 
+\f4 \cf10 \cb6 \'94coucou\'94\cf9 \cb6  \cf2 \cb6 : \cf8 str
+\f3 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 raise\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\uc0\u915  
+\f1 \cf2 \cb6 \uc0\u8866  
+\f4 \cf7 \cb6 raise\cf10 \cb6 \'94coucou\'94\cf2 \cb6  : \cf8 str
+\f3 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 raise\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\uc0\u8866 
+\f4 \cf7 raise\cf2 (\cf7 raise\cf10 \cb6 \'94coucou\'94\cf2 \cb6 ):\cf8 str \cf2 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 CM01 : Grammaire\
+Langages de programmation\
+Exemple\
+Terminaux, non-terminaux, r\'e8gles\
+Grammaire, d\'e9finition formelle\
+Grammaire, exemple\
+Arbre syntaxique\
+Arbre syntaxique abstrait (AST)\
+Probl\'e8mes d\'92ambiguit\'e9\
+Port\'e9e d\'92une variable, lieur\
+ Arbre lieur abstrait (ABT)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 CM02 : Syntaxe du calcul\
+Langages noyaux\
+Un langage noyau\
+Notations\
+Variables libres et li\'e9es\
+Variables li\'e9es\
+Substitution\
+Substitution - capture non voulue\
+Substitution\
+Substitution - d\'e9finition inductive\
+Preuve par induction sur les termes\
+\
+CM03 : Dynamique du calcul \
+Principe de r\'e9duction\
+Exemple\
+B-r\'e9duction\
+Confluence\
+S\'e9mantique Op\'e9rationnelle Structurelle (SOS)\
+Strat\'e9gie de r\'e9duction\
+Appel par nom (CBN)\
+Appel par valeur (CBV)\
+Appel par valeur vs appel par nom\
+Preuve par induction\
+\
+CM04 : Types\
+Syst\'e8me de types\
+Utilit\'e9 (en programmation)\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+Noyau OCaml \
+Jugements et r\'e8gles de typages\
+R\'e8gles et d\'e9rivation de typage\
+Propri\'e9t\'e9s\
+Fonctions d\'92ordre sup\'e9rieur\
+
+\f3 \cf0 \cb1 \kerning1\expnd0\expndtw0 Types des fonctions\
+Propri\'e9t\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+CM05  : Typage et r\'e9duction\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+Noyau OCaml \cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb6 Noyau OCaml : r\'e9duction\
+R\'e9duction et types\
+Pr\'e9servation (r\'e9duction du sujet)\
+Terminaison
+\f3 \cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \
+CM06 : Exceptions\
+Division par 0\
+Lambda -calcul avec exceptions\
+Syst\'e8me de types\
+R\'e9duction\
+S\'fbret\'e9 du typage\
+\cf0 \
+\cf2 CM07 : S\'e9mantique \'e0 grand pas \
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+Un mini-langage imp\'e9ratif \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique op\'e9rationnelle structurelle \cf2 \cb1 \
+\cf2 \cb6 Boucle tant que \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique du tant que \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique \cb6 fausse \cb6 du tant que \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique \cb6 correcte \cb6 du tant que \cf2 \cb1 \
+\cf2 \cb6 Petit pas vs grand pas \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique \'e0 grand pas \cf2 \cb1 \
+\cf2 \cb6 \uc0\u955 -calcul en appel par valeur \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique \'e0 grand pas \cf2 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf2 \kerning1\expnd0\expndtw0 Sp\'e9cification de Javascript\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+Progression et pr\'e9servation \cf2 \cb1 \
+\cf2 \cb6 Grand pas vs petit pas \cf2 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 CM09 :  Polymorphisme\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+La duplication de code, c\'92est mal \
+Variantes de polymorphisme \cf2 \cb1 \
+\cf2 \cb6 Noyau OCaml monomorphe \cf2 \cb1 \
+\cf2 \cb6 Exemples \cf2 \cb1 \
+\cf2 \cb6 D\'e9finition polymorphe \cf2 \cb1 \
+\cf2 \cb6 Type polymorphe\
+Noyau OCaml polymorphe \cf2 \cb1 \
+\cf2 \cb6 Exemples \cf2 \cb1 \
+\cf2 \cb6 Syst\'e8me de types \cf2 \cb1 \
+\cf2 \cb6 Exemples \cf2 \cb1 \
+\cf2 \cb6 Propri\'e9t\'e9s \cf2 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf0 \kerning1\expnd0\expndtw0 \
+CM10 : Inf\'e9rence de types\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+Explicite vs implicite \cf2 \cb1 \
+\cf2 \cb6 Probl\'e8mes de typage \cf2 \cb1 \
+\cf2 \cb6 \uc0\u955 -calcul monomorphe \cf2 \cb1 \
+\pard\pardeftab720\sl168\slmult1\partightenfactor0
+\cf2 \cb6 G\'e9n\'e9ration de contraintes \cb6 \uc0\u964 \cb6 \dn6 1 \cb6 \up0 =\cb6 \up21 ? \cb6 \up0 \uc0\u964 \cb6 \dn6 2 \cf2 \cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb6 G\'e9n\'e9ration de contraintes \cf2 \cb1 \
+\cf2 \cb6 R\'e9solution de contraintes \cf2 \cb1 \
+\cf2 \cb6 Inf\'e9rence de types \cf2 \cb1 \
+\cf2 \cb6 Inf\'e9rence de type polymorphe \cf2 \cb1 \
+\cf2 \cb6 Inf\'e9rence . . . 
+\f3 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+CM11 : Syst\'e8me F\
+\cf2 Syst\'e8me F\
+Syst\'e8me de types\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+R\'e9duction en appel par valeur (droite \'e0 gauche) \cf2 \cb1 \
+\cf2 \cb6 Propri\'e9t\'e9s \cf2 \cb1 \
+\cf2 \cb6 Syst\'e8me F sans annotation \cf2 \cb1 \
+\cf2 \cb6 Syst\'e8me F \cf2 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf2 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 CM12 : 
+\f4 \cb6 \expnd0\expndtw0\kerning0
+Type alg\'e9brique de donn\'e9es
+\f3 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf2 \cb6 \expnd0\expndtw0\kerning0
+Type alg\'e9brique de donn\'e9es (Algebraic Data Types, ADT) \cf2 \cb1 \
+\cf2 \cb6 Noyau avec ADT \cf2 \cb1 \
+\cf2 \cb6 Exemple : listes \cf2 \cb1 \
+\cf2 \cb6 Unification dirig\'e9e par la syntaxe \cf2 \cb1 \
+\cf2 \cb6 S\'e9mantique op\'e9rationnelle structurelle \cf2 \cb1 \
+\cf2 \cb6 Typage des expressions : \uc0\u915 ; \u8710  
+\f1 \cb6 \uc0\u8866 
+\f4 \cb6  \cb6 e \cb6 : \cb6 \uc0\u964  \cf2 \cb1 \
+\cf2 \cb6 Typage des motifs : \uc0\u8710 
+\f1 \cb6 \uc0\u8866 
+\f4 \cb6 p\cb6 :\cb6 \uc0\u964 
+\f1 \cb6 \uc0\u8867 
+\f4 \cb6 \uc0\u915 \cf2 \cb1 \
+\cf2 \cb6 Typage \cf2 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf2 \kerning1\expnd0\expndtw0 \
+\cf0 \
+}

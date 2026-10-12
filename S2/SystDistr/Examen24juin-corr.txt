@@ -1,0 +1,88 @@
+Exercice 2 :
+
+a) Un arbre BFS ("Breadth First Search") est un arbre recouvrant T d'un graphe G et de racine r qui préserve les distances des sommets de G au sommet r. En d'autres termes T est un arbre recouvrant de G tel que
+
+(1ère version) pour tout sommet v de G, 
+
+d_G(v,r)=d_T(v,r)
+
+(2ème version) pour tout sommet v de G, la distance de v à r dans T est égale à la distance de v à r dans G.
+
+b) Je remarque que les plus courts chemins d'un sommet v au sommet 0 sont les suivants :
+
+* Pour le sommet 1, 1->0
+
+* Pour le sommet 2, 2->0
+
+* Pour le sommet 3, 3->2->0
+
+* Pour le sommet 4, 4->1->0
+
+* Pour le sommet 5, 5->2->0
+
+Il n'y a pas d'autre plus court chemin vers 0 et par conséquent il ne peut y avoir qu'un seul arbre BFS de racine 0 dans le graphe proposé qui est obtenu en prenant l'ensemble des arêtes contenues dans ces plus courts chemins.
+
+c) (1ère version) L'algorithme de Bellman-Ford distribué s'inspire de l'algorithme Flood&Echo et il diffère ce celui-ci de la façon suivante :
+
+* tous les messages de type donnée seront reçu (ce qui n'est pas le cas dans Flood&Echo) et ces messages de type données contiennent la distance à la racine : le message de type donné envoyé par i à j contient la longueur d'un chemin entre i et la racine (dont on aimerait qu'il s'agisse de la distance entre i et la racine).
+
+* lorsque l'entité j reçoit un message d de type donnée d'une autre entité de calcul, si d+1 est plus petit que la distance courante stockée par i, alors i remplace sa distance par d+1
+
+(2ème version) L'algorithme de Bellman-Ford s'inspire de l'algorithme Flood et de sa variante Flood&Echo. Il s'articule selon les trois idées suintes :
+
+(1) On commence par procéder comme dans Flood :
+
+* L'entité de calcul racine (appelons-la r) envoie 0 à tous ses voisins
+
+* Chaque autre entité de calcul attend un premier message d'un de ses voisins. Lorsque ce message est reçu par i de la part de j, il contient une certaine distance d. L'entité i stocke alors d+1 dans une variable L(i) qui modélise la distance à la racine. Ensuite i envoie L(i) à tous ses voisins sauf j qui va être considéré par i comme son père (temporairement).
+
+---
+
+(2) Un deuxième temps correspond à Flood&Echo à la différence que chaque entité de calcul s'autorise à changer de parent : 
+
+Chaque entité de calcul va attendre des messages de ses voisins et réagir en fonction du type de message reçu (les types possibles sont distance, accusé de réception et père).
+
+* Si i reçoit un message de type distance contenant la valeur d, il compare d+1 à L(i) et si L(i)>d+1, i affecte d+1 à L(i). Lorsque cela se produit l'origine d'un tel message est alors prise pour parent.
+
+---
+
+(3) La gestion du nombre de message est faite comme dans Flood&Echo :
+
+Une chose importante est que puisque les réceptions sont bloquantes, il faut que le nombre de messages attendu dans le deuxième temps soit connu a priori. Chaque entité de calcul attendra donc un accusé de réception pour chacun des messages de type distance envoyé et un message de type distance pour chaque voisin.
+
+d) Pour pouvoir tracer cet algorithme, il nous faut faire des hypothèses. Des hypothèses raisonnables sont, par exemple les suivantes (ce sont les hypothèses vues en cours) :
+
+* le temps de transit des message est le même pour tous les messages (c'est un temps unitaire)
+
+* si deux messages arrivent en même temps à une entité de calcul, alors le premier message reçu est celui qui vient de l'entité d'identifiant le plus petit.
+
+Cependant, sous ces hypothèses, la distance L(i) contenue dans l'entité i ne sera jamais mise à jour. Ainsi l'algorithme de Bellman-Ford se comporte comme l'algorithme Flood&Echo. En particulier les messages de type données reçus en premier par chaque entité de calcul le seront le la part de leur parent dans l'unique arbre BFS de racine 0 dans le graphe considéré.
+
+Exercice 3
+
+b) Voici une portion de programme qui crée un communicateur de topologie cartésienne 4x3 (avec 12 entités).
+
+int tailles[2], periodes[2];
+
+tailles[0]=4;
+tailles[1]=3;
+
+periodes[0]=1;
+periodes[1]=0;
+
+MPI_COMM comm;
+
+MPI_Cart_create(MPI_COMM_WORLD,2,tailles,periodes,0,&comm)
+
+c) Les entités de calcul sont organisées en cylindre dans ce communicateur. Leurs coordonnées cartésiennes sont de la forme (i,j) où 0<=i<=3 et 0<=j<=2. L'entité de coordonnée cartésienne (i,j) a 3 voisins si j vaut 0 ou 2 et 4 si j vaut 1.
+
+d) Si cette procédure est répétée un grand nombre de fois, alors la valeur de p de toutes les entités de calcul deviendra égale à la plus grande valeur de p tirée initialement au hasard. En effet, à la première itération de ce processus, les voisins d'une entité de calcul imax contenant la valeur maximale pmax de p vont contenir pmax. À la deuxième itération, les entités de calcul à distance 2 de imax contiendront pmax, etc.
+
+
+
+
+
+
+
+
+
